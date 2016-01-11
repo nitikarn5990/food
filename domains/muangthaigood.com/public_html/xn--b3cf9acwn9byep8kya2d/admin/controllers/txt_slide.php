@@ -201,7 +201,7 @@ if ($_GET['id'] != '' && $_GET['action'] == 'edit') {
         <div class="span12">
 
             <div class="da-panel collapsible">
-                <div class="da-panel-header"> <span class="da-panel-title"> <i class="icol-<?php echo ($txt_slide->GetPrimary() != '') ? 'application-edit' : 'add' ?>"></i> <?php echo ($txt_slide->GetPrimary() != '') ? 'แก้ไข' : 'เพิ่ม' ?> ภาพสไลด์ </span> </div>
+                <div class="da-panel-header"> <span class="da-panel-title"> <i class="icol-<?php echo ($txt_slide->GetPrimary() != '') ? 'application-edit' : 'add' ?>"></i> <?php echo ($txt_slide->GetPrimary() != '') ? 'แก้ไข' : 'เพิ่ม' ?> ภาพข้อความสไลด์ </span> </div>
                 <div class="da-panel-content da-form-container">
                     <form id="validate" enctype="multipart/form-data" action="<?php echo ADDRESS_ADMIN_CONTROL ?>txt_slide<?php echo ($txt_slide->GetPrimary() != '') ? '&id=' . $txt_slide->GetPrimary() : ''; ?>" method="post" class="da-form">
                         <?php if ($txt_slide->GetPrimary() != ''): ?>
@@ -268,7 +268,7 @@ if ($_GET['id'] != '' && $_GET['action'] == 'edit') {
 
                         </div>
                         <div class="btn-row">
-                            <input type="submit" name="submit_bt" value="บันทึกข้อมูล" class="btn btn-success" />
+                         
                             <input type="submit" name="submit_bt" value="บันทึกข้อมูล และแก้ไขต่อ" class="btn btn-primary" />
                             <a href="<?php echo ADDRESS_ADMIN_CONTROL ?>txt_slide" class="btn btn-danger">ยกเลิก</a> </div>
                     </form>

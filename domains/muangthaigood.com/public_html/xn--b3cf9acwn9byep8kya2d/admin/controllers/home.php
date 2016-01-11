@@ -352,7 +352,7 @@ if ($_GET['home_files_id'] != '') {
     Alert(GetAlert('success'), 'success');
     ?>
             <div class="da-panel collapsible">
-                <div class="da-panel-header"> <span class="da-panel-title"> <i class="icol-<?php echo ($home->GetPrimary() != '') ? 'application-edit' : 'add' ?>"></i> <?php echo ($home->GetPrimary() != '') ? 'แก้ไข' : 'เพิ่ม' ?> หน้าแรก </span> </div>
+                <div class="da-panel-header"> <span class="da-panel-title"> <i class="icol-<?php echo ($home->GetPrimary() != '') ? 'application-edit' : 'add' ?>"></i> <?php echo ($home->GetPrimary() != '') ? 'แก้ไข' : 'เพิ่ม' ?> รายละเอียดหน้าแรก </span> </div>
                 <div class="da-panel-content da-form-container">
                     <form id="validate" enctype="multipart/form-data" action="<?php echo ADDRESS_ADMIN_CONTROL ?>home<?php echo ($home->GetPrimary() != '') ? '&id=' . $home->GetPrimary() : ''; ?>" method="post" class="da-form">
     <?php if ($home->GetPrimary() != ''): ?>

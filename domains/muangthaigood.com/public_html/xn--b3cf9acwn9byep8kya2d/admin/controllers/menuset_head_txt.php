@@ -145,7 +145,7 @@ if ($_GET['action'] == "add" || $_GET['action'] == "edit") {
     ?>
 
             <div class="da-panel collapsible">
-                <div class="da-panel-header"> <span class="da-panel-title"> <i class="icol-<?php echo ($menuset_head_txt->GetPrimary() != '') ? 'application-edit' : 'add' ?>"></i> <?php echo ($menuset_head_txt->GetPrimary() != '') ? '' : '' ?> แก้ไข หัวเรื่อง </span> </div>
+                <div class="da-panel-header"> <span class="da-panel-title"> <i class="icol-<?php echo ($menuset_head_txt->GetPrimary() != '') ? 'application-edit' : 'add' ?>"></i> <?php echo ($menuset_head_txt->GetPrimary() != '') ? '' : '' ?> แก้ไข หัวเรื่อง เซตอาหาร </span> </div>
                 <div class="da-panel-content da-form-container">
                     <form id="validate" enctype="multipart/form-data" action="<?php echo ADDRESS_ADMIN_CONTROL ?>menuset_head_txt<?php echo ($menuset_head_txt->GetPrimary() != '') ? '&id=' . $menuset_head_txt->GetPrimary() : ''; ?>" method="post" class="da-form">
     <?php if ($menuset_head_txt->GetPrimary() != ''): ?>

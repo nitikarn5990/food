@@ -208,7 +208,7 @@ if ($_GET['action'] == "add" || $_GET['action'] == "edit") {
     ?>
 
             <div class="da-panel collapsible">
-                <div class="da-panel-header"> <span class="da-panel-title"> <i class="icol-<?php echo ($portfolio_head_image->GetPrimary() != '') ? 'application-edit' : 'add' ?>"></i> <?php echo ($portfolio_head_image->GetPrimary() != '') ? 'แก้ไข' : 'เพิ่ม' ?> ภาพสไลด์ </span> </div>
+                <div class="da-panel-header"> <span class="da-panel-title"> <i class="icol-<?php echo ($portfolio_head_image->GetPrimary() != '') ? 'application-edit' : 'add' ?>"></i> <?php echo ($portfolio_head_image->GetPrimary() != '') ? 'แก้ไข' : 'เพิ่ม' ?> Head Image ผลงานของเรา </span> </div>
                 <div class="da-panel-content da-form-container">
                     <form id="validate" enctype="multipart/form-data" action="<?php echo ADDRESS_ADMIN_CONTROL ?>portfolio_head_image<?php echo ($portfolio_head_image->GetPrimary() != '') ? '&id=' . $portfolio_head_image->GetPrimary() : ''; ?>" method="post" class="da-form">
     <?php if ($portfolio_head_image->GetPrimary() != ''): ?>

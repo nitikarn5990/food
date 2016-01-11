@@ -204,7 +204,7 @@ if ($_GET['id'] != '' && $_GET['action'] == 'edit') {
         <div class="span12">
 
             <div class="da-panel collapsible">
-                <div class="da-panel-header"> <span class="da-panel-title"> <i class="icol-<?php echo ($sub_images->GetPrimary() != '') ? 'application-edit' : 'add' ?>"></i> <?php echo ($sub_images->GetPrimary() != '') ? 'แก้ไข' : 'เพิ่ม' ?> ภาพสไลด์ </span> </div>
+                <div class="da-panel-header"> <span class="da-panel-title"> <i class="icol-<?php echo ($sub_images->GetPrimary() != '') ? 'application-edit' : 'add' ?>"></i> <?php echo ($sub_images->GetPrimary() != '') ? 'แก้ไข' : 'เพิ่ม' ?> ภาพย่อย </span> </div>
                 <div class="da-panel-content da-form-container">
                     <form id="validate" enctype="multipart/form-data" action="<?php echo ADDRESS_ADMIN_CONTROL ?>sub_images<?php echo ($sub_images->GetPrimary() != '') ? '&id=' . $sub_images->GetPrimary() : ''; ?>" method="post" class="da-form">
                         <?php if ($sub_images->GetPrimary() != ''): ?>
@@ -298,7 +298,7 @@ if ($_GET['id'] != '' && $_GET['action'] == 'edit') {
             Alert(GetAlert('success'), 'success');
             ?>
             <div class="da-panel collapsible">
-                <div class="da-panel-header"> <span class="da-panel-title"> <i class="icol-grid"></i> รูปภาพ ทั้งหมด </span> </div>
+                <div class="da-panel-header"> <span class="da-panel-title"> <i class="icol-grid"></i> รูปภาพย่อย ทั้งหมด </span> </div>
                 <div class="da-panel-toolbar">
                     <div class="btn-toolbar">
                         <div class="btn-group"> <a class="btn" href="<?php echo ADDRESS_ADMIN_CONTROL ?>sub_images&action=add"><i class="icol-add"></i> เพิ่มข้อมูล</a> </div>

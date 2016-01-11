@@ -233,122 +233,7 @@ if ($_SESSION ['admin_id'] != "") {
                             </div>
                             <div id="da-header-button-container" >
                                 <ul>
-                                    <li class="da-header-button-wrap" title="มีการแจ้งชำระเงิน" style="display: none;">
-
-
-                                        <div class="da-header-button" data-toggle="dropdown">
-
-                                            <?php if ($payment_confirm->CountDataDesc("id", "status = 'รอการชำระเงิน'") > 0) { ?>
-                                                <span class="btn-count"><?php echo $payment_confirm->CountDataDesc("id", "status = 'รอการชำระเงิน'") ?></span>
-                                            <?php } ?>
-
-                                            <a href="#"><i
-                                                    class="icon-circle-exclamation-mark"></i></a>
-
-
-                                        </div>
-
-                                        <ul class="dropdown-menu pull-right">
-                                            <li ><span class="da-dropdown-sub-title" style="  min-width: 200px;">แจ้งการชำระเงิน</span>
-
-
-                                                <ul class="da-dropdown-sub">
-
-                                                    <?php
-                                                    $sql = "SELECT * FROM " . $payment_confirm->getTbl() . " WHERE  status = 'รอการชำระเงิน' ORDER BY id DESC LIMIT 0,4";
-
-                                                    // echo $sql;
-                                                    $query = $db->Query($sql);
-                                                    while ($row = $db->FetchArray($query)) {
-                                                        ?>
-                                                        <li class="unread">
-
-
-                                                            <a href="<?php echo ADDRESS_ADMIN_CONTROL ?>payment_confirm&action=edit&id=<?= $row['id'] ?>">
-
-
-                                                                <span class="thumbnail"><img src="assets/images/icon-payment.png" alt=""></span>
-
-
-                                                                <span class="info" style="  padding-top: 5px;">
-
-
-                                                                    <span class="name">เลขที่สั่งซื้อ <?php echo $functions->padLeft($row['orders_id'], 5, "0") ?></span>
-
-
-                                                                    <span class="message">
-
-
-                                                                        ยอดเงินการแจ้งชำระ <?php echo $row['transfer_amount'] ?>
-
-
-                                                                    </span>
-
-
-                                                                    <span class="time">
-
-
-                                                                        <?php echo $functions->ShowDateThTime($row['created_at']) ?> 
-
-
-                                                                    </span>
-
-
-                                                                </span>
-
-
-                                                            </a>
-
-
-                                                        </li>
-
-
-
-
-
-                                                    <?php } ?>
-
-                                                </ul> <a
-                                                    class="da-dropdown-sub-footer" href="<?php echo ADDRESS_ADMIN_CONTROL ?>payment_confirm">
-
-
-                                                    ดูการแจ้งชำระเงินทั้งหมด </a></li>
-
-
-                                        </ul>
-
-
-                                    </li>
-                                    <li class="da-header-button-wrap"
-                                        title="ข้อความที่ยังไม่ได้อ่าน" style="display: none;">
-
-
-                                        <div class="da-header-button" data-toggle="dropdown">
-
-                                            <?php if ($contact_message->CountDataDesc("id", "status = 'ยังไม่ได้อ่าน'") > 0) { ?>
-                                                <span class="btn-count"><?php echo $contact_message->CountDataDesc("id", "status = 'ยังไม่ได้อ่าน'") ?></span>
-                                            <?php } ?>
-
-                                            <a href="#"><i
-                                                    class="icon-envelope"></i></a>
-
-
-                                        </div>
-
-                                        <ul class="dropdown-menu pull-right">
-                                            <li><span class="da-dropdown-sub-title">Messages</span> <a
-                                                    class="da-dropdown-sub-footer"
-                                                    href="<?php echo ADDRESS_ADMIN_CONTROL ?>contact_message">
-
-
-                                                    View all messages </a></li>
-
-
-                                        </ul>
-
-
-                                    </li>
-
+                                  
                                     <li class="da-header-button-wrap">
                                         <div class="da-header-button">
                                             <a href="javascript:void(0)"
@@ -545,7 +430,7 @@ if ($_SESSION ['admin_id'] != "") {
             <!-- Footer -->
             <div id="da-footer">
                 <div class="da-container clearfix">
-                    <p>Copyright 2015.</p>
+                    <p>Copyright 2016.</p>
                 </div>
             </div>
         </div>
