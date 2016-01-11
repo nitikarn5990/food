@@ -1,0 +1,36 @@
+
+@font-face {
+    font-family: PSLxKittithada;
+    src: url('./fonts/psl096-webfont.eot');
+    src: url('./fonts/psl096-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/psl096-webfont.woff2') format('woff2'),
+         url('./fonts/psl096-webfont.woff') format('woff'),
+         url('./fonts/psl096-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* CSS Document */
+body{ padding:0; margin:0; background:#fff; font:normal 13px Arial, Helvetica, sans-serif; color:#000;}
+img{ border:0;}
+#tapmenu{ widows:100%; background:#e81414; height:41px;}
+#line{ height:4px; background:#00813f;}
+#sizemenu{ width:940px; margin:0 auto; padding:6px 0 0 0;}
+#menu ul{list-style:none; padding:0 0 0 20px; margin:0 auto; text-align:center; font-family:PSLxKittithada; font-size:20px;}
+#menu li{display:block; float:left; padding:5px 27px; margin:0;}
+#menu li a{color:#fff; text-decoration: none;}
+#menu li a:hover{color:#000; text-decoration: none;}
+#slide{ margin:0 auto; padding:0; background:#000;}
+#centerslide{ clear:both; width:940px; margin:0 auto; padding:0; text-align:center;}
+#line1{clear:both; height:4px; background:#e81414;}
+.txtslide{ position: absolute; z-index:101; padding:200px 3% 0 3%; text-align:center; margin:0 auto;}
+#content{ width:940px; margin:0 auto; padding:10px 0;}
+#content ul{list-style:none; padding:0 0 0 20px; margin:0 auto; text-align:center;}
+#content li{display:block; float:left; padding:5px 27px; margin:0;}
+#content li a{ color:#000; text-decoration:none;}
+.price{ color:#fb0709;}
+.clear{ clear:both;}
+#content h1{font-family:PSLxKittithada; font-size:22px; color:#e81414;}
+#footer{ clear:both; padding:10px 0; margin:0 auto; width:940px; text-align:center; color:#7b7b7b; font:12px normal Arial, Helvetica, sans-serif;}
+.linefooter{ background: url(images/linefooter.jpg) left top repeat-x; height:3px;}
